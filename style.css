@@ -34,3 +34,41 @@ img {
   max-width: 100%;
   display: block;
 }
+
+.new-articles{
+  background-color: var(--very-dark-blue);
+}
+
+.new-item{
+  padding: 20px;
+  border-bottom: 1px solid var(--dark-grayish-blue);
+}
+.new-item:last-child{
+  border-bottom: none;
+}
+
+.new-item > p{
+  color: var(--grayish-blue);
+}
+.new-item>h3{
+  color: var(--off-white);
+}
+
+.new-articles>h2{
+  color: var(--soft-orange);
+  padding: 20px 20px 0 20px;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  padding: 20px 0 40px 0;
+}
+header nav {
+  display: none; 
+}
+.menu-toggle, .menu-close{
+  border: none;
+  background-color: var(--off-white);
+}
