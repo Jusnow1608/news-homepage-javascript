@@ -1,5 +1,5 @@
 const menu = document.querySelector(".menu");
-const hamburger = document.querySelector(".menu-humburger");
+const hamburger = document.querySelector(".menu-hamburger");
 const x_button = document.querySelector(".menu-close");
 
 hamburger.addEventListener("click", () => {
@@ -15,7 +15,7 @@ x_button.addEventListener("click", () => {
 
 document.body.addEventListener("click", (e) => {
 
-    if (menu.classList.contains("open") && !e.target.closest(".menu") && !e.target.closest(".menu-humburger")) {
+    if (menu.classList.contains("open") && !e.target.closest(".menu") && !e.target.closest(".menu-hamburger")) {
         menu.classList.remove("open");
         x_button.classList.remove("open");
     }

@@ -43,23 +43,33 @@ img {
 }
 
 .new-item{
-  padding: 20px;
+  padding: 0 0 30px 0;
   border-bottom: 1px solid var(--dark-grayish-blue);
+  margin: 20px;
 }
 .new-item:last-child{
   border-bottom: none;
+  padding: 0 0 10px 0;
 }
 
 .new-item > p{
   color: var(--grayish-blue);
+  line-height: 1.7;
+  text-align: justify;
 }
-.new-item>h3{
+.new-title{
   color: var(--off-white);
+  line-height: 1.7;
+  font-size: 20px;
 }
-
+.new-title:hover{
+color: var(--soft-orange);
+}
 .new-articles>h2{
   color: var(--soft-orange);
   padding: 20px 20px 0 20px;
+  line-height: 1.7;
+  font-size: 32px;
 }
 
 .site-header {
@@ -74,7 +84,7 @@ img {
   right: 0;
   display: none; 
 }
-.menu-humburger, .menu-close {
+.menu-hamburger, .menu-close {
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -104,11 +114,101 @@ img {
   right: 25px;
  }
 
-.open ul {
+.menu ul {
   display: flex;
   flex-direction: column; 
   gap: 30px;              
   list-style: none;
   font-size: 17px;
   font-weight: 400;
+}
+
+.homepage-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  margin-bottom: 60px;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.main-article-content h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 25px 0 15px 0;
+}
+
+.main-article-details p {
+  color: var(--dark-grayish-blue);
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--soft-red);
+  color: var(--very-dark-blue);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  padding: 15px 30px;
+  transition: background-color 0.2s ease;
+}
+.btn-primary:hover{
+  color:var(--off-white);
+  background-color: var(--very-dark-blue);
+}
+.top-stories {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.story-card {
+  display: flex;
+  gap: 25px;
+}
+
+
+.story-card img {
+  width: 100px;
+  height: 130px;
+  object-fit: cover;
+}
+
+.story-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.story-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--soft-red);
+  line-height: 1;
+}
+
+.story-title {
+  font-size: 17px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.story-title:hover{
+color: var(--soft-red);
+}
+
+.story-info p {
+  color: var(--dark-grayish-blue);
+  font-size: 16px;
+  line-height: 1.8;
 }
