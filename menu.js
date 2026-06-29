@@ -23,7 +23,7 @@ document.body.addEventListener("click", (e) => {
 
 
 window.addEventListener("resize", () => {
-    if (window.innerWidth > 765) {
+    if (window.innerWidth > 1024) {
         menu.classList.remove("open");
         x_button.classList.remove("open");
     }

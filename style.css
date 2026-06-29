@@ -10,7 +10,7 @@
 --very-dark-blue: hsl(240, 100%, 5%);
 
 /*Box-shadow*/
---box-shadow:rgba(0, 0, 0, 0.5);
+--box-shadow:hsl(0 0% 0% / 0.5);
 }
 
 *, *::before, *::after {
@@ -87,7 +87,7 @@ color: var(--soft-orange);
 
 .menu {
   position: fixed;
-  top: 5rem;;
+  top: 5rem;
   right: 0;
   display: none; 
 }
@@ -242,7 +242,7 @@ color: var(--soft-red);
   .logo {
     width: 64px;
   }
-  .menu-hamburger, .menu-close {
+  .menu-hamburger, .menu-close, .menu-close.open {
     display: none !important;
   }
 
