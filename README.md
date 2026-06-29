@@ -35,7 +35,8 @@ Below are the screenshots of the completed project views located in the `solutio
 
 * **Mobile Design View:**
   The stacked, fluid single-column layout targeting handheld modern smartphone dimensions.
-  ![Mobile Layout](./solution/solution-mobile-design.jpg)
+
+  <img src="./solution/solution-mobile-design.jpg" alt="Mobile Layout" height="500">
 
 #### Interactive Active States
 * **Full Active Overview Compilation:**
@@ -56,7 +57,8 @@ Below are the screenshots of the completed project views located in the `solutio
 
 * **Mobile Menu Overlay Navigation:**
   The interactive mobile drawer sidebar configuration safely rendering the dark dimming backdrop surface layout.
-  ![Mobile Menu Active State](./solution/solution-mobile-menu.jpg)
+  
+  <img src="./solution/solution-mobile-menu.jpg" alt="Mobile Menu Active State" height="500">
 
 ### Links
 
