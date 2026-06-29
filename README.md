@@ -29,34 +29,34 @@ Users should be able to:
 Below are the screenshots of the completed project views located in the `solution` folder, showcasing the actual implementation:
 
 #### Base Layouts
-* **Desktop Design View:**
-  The complete 3-column CSS Grid layout structure optimized for spacious monitors.
+
+* **Desktop Design View:** The complete 3-column CSS Grid layout structure optimized for spacious desktop monitors.
+  
   ![Desktop Layout](./solution/solution-desktop-design.jpg)
 
-* **Mobile Design View:**
-  The stacked, fluid single-column layout targeting handheld modern smartphone dimensions.
-
-  <img src="./solution/solution-mobile-design.jpg" alt="Mobile Layout" height="500">
+* **Mobile Design View:** The stacked, fluid single-column layout targeting handheld modern smartphone dimensions.
+  
+  <img src="./solution/solution-mobile-design.jpg" alt="Mobile Layout" height="800">
 
 #### Interactive Active States
-* **Full Active Overview Compilation:**
-  Demonstrates mouse cursor hover dynamics changing font colors and backgrounds across various sections simultaneously.
-  ![Active States Overview](./solution/active-states.jpg)
 
-* **Navigation Menu Link Hover State:**
-  Changes targeted navbar links seamlessly using CSS transition colors (`--soft-red`).
+* **Main Top Article Title Hover State:** Demonstrates the interactive feedback when hovering over the main hero component's header text, changing the title typography color.
+  
+  ![Main Title Hover State](./solution/solution-active-top-title.jpg)
+
+* **Call-To-Action "Read More" Button Hover State:** The primary action button adapts responsively on cursor hover, switching dynamically to a dark, solid background fill state.
+  
+  ![CTA Button Hover State](./solution/solution-active-read-me-button.jpg)
+
+* **Navigation Links Hover State:** Displays the desktop top header navigation link items shifting gracefully into their active coral/red colored focus variations.
+  
   ![Navigation Links Active State](./solution/solution-active-menu.jpg)
 
-* **Main Call-To-Action Button State:**
-  The `Read more` primary button scales seamlessly to an inverted dark accent background color variant upon hovering.
-  ![CTA Button Active State](./solution/solution-active-top-title.jpg)
+* **Sidebar News Title Hover State:** Shows the individual sidebar article headings under the "New" section changing color into a bright orange palette on mouse hover interaction.
+  
+  ![Sidebar News Title Hover State](./solution/solution-active-news-title.jpg)
 
-* **Sidebar News Item Title State:**
-  Hovering over individual sidebar article headings dynamically triggers an illumination change to `--soft-orange`.
-  ![Sidebar Title Active State](./solution/solution-active-news-title.jpg)
-
-* **Mobile Menu Overlay Navigation:**
-  The interactive mobile drawer sidebar configuration safely rendering the dark dimming backdrop surface layout.
+* **Mobile Menu Overlay Navigation:** The interactive mobile drawer sidebar configuration safely rendering the dark dimming backdrop surface layout with its close (X) action icon state.
   
   <img src="./solution/solution-mobile-menu.jpg" alt="Mobile Menu Active State" height="500">
 
