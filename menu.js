@@ -2,30 +2,36 @@ const menu = document.querySelector(".menu");
 const hamburger = document.querySelector(".menu-hamburger");
 const x_button = document.querySelector(".menu-close");
 
-hamburger.addEventListener("click", () => {
-    menu.classList.add("open");
-    x_button.classList.add("open");
-});
+function toggleMenu(isOpen) {
+    if (isOpen) {
+        menu.classList.add("open");
+        x_button.classList.add("open");
+        hamburger.setAttribute("aria-expanded", "true");
+    } else {
+        menu.classList.remove("open");
+        x_button.classList.remove("open");
+        hamburger.setAttribute("aria-expanded", "false");
+    }
+}
 
-x_button.addEventListener("click", () => {
-    menu.classList.remove("open");
-    x_button.classList.remove("open");
-});
+hamburger.addEventListener("click", () => toggleMenu(true));
+
+x_button.addEventListener("click", () => toggleMenu(false));
 
 
-document.body.addEventListener("click", (e) => {
-
+document.addEventListener("click", (e) => {
     if (menu.classList.contains("open") && !e.target.closest(".menu") && !e.target.closest(".menu-hamburger")) {
-        menu.classList.remove("open");
-        x_button.classList.remove("open");
+        toggleMenu(false);
     }
 });
 
+const desktopMediaQuery = window.matchMedia("(min-width: 64rem)");
 
-window.addEventListener("resize", () => {
-    if (window.innerWidth > 1024) {
-        menu.classList.remove("open");
-        x_button.classList.remove("open");
+function handleDesktopChange(e) {
+    if (e.matches) {
+        toggleMenu(false);
     }
-});
+}
+
+desktopMediaQuery.addEventListener("change", handleDesktopChange);
 
