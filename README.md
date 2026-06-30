@@ -100,10 +100,9 @@ body {
 ```
 ```js
 /* Proud of this reliable backdrop click listener for mobile navigation dismissal */
-document.body.addEventListener("click", (e) => {
+document.addEventListener("click", (e) => {
     if (menu.classList.contains("open") && !e.target.closest(".menu") && !e.target.closest(".menu-hamburger")) {
-        menu.classList.remove("open");
-        x_button.classList.remove("open");
+        toggleMenu(false);
     }
 });
 ```
