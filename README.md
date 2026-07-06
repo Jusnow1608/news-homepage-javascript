@@ -63,7 +63,7 @@ Below are the screenshots of the completed project views located in the `solutio
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-news-homepage-using-mobile-first-workflow-and-css-grid-JTcCXGBX87)
-- Live Site URL: [Add live site URL here](https://jusnow1608.github.io/news-homepage-javascript/)
+- Live Site URL: [Github Pages Live Preview](https://jusnow1608.github.io/news-homepage-javascript/)
 
 ## My process
 
