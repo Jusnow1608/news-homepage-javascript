@@ -91,9 +91,9 @@ img {
   transition: color 0.2s ease;
 }
 
-.new-title:hover{
-color: var(--soft-orange);
-}
+.new-title a:hover, .new-title a:focus-visible{   
+color: var(--soft-orange);        
+} 
 
 .new-item-header{
   color: var(--soft-orange);

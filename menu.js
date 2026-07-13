@@ -3,14 +3,16 @@ const hamburger = document.querySelector(".menu-hamburger");
 const x_button = document.querySelector(".menu-close");
 
 function toggleMenu(isOpen) {
+
+    menu.classList.toggle("open", isOpen);
+    x_button.classList.toggle("open", isOpen);
+    hamburger.setAttribute("aria-expanded", String(isOpen));
+
     if (isOpen) {
-        menu.classList.add("open");
-        x_button.classList.add("open");
-        hamburger.setAttribute("aria-expanded", "true");
+       x_button.focus();     
+      
     } else {
-        menu.classList.remove("open");
-        x_button.classList.remove("open");
-        hamburger.setAttribute("aria-expanded", "false");
+       hamburger.focus();  
     }
 }
 
@@ -21,6 +23,12 @@ x_button.addEventListener("click", () => toggleMenu(false));
 
 document.addEventListener("click", (e) => {
     if (menu.classList.contains("open") && !e.target.closest(".menu") && !e.target.closest(".menu-hamburger")) {
+        toggleMenu(false);
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && menu.classList.contains("open")) {
         toggleMenu(false);
     }
 });
