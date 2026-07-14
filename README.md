@@ -62,8 +62,8 @@ Below are the screenshots of the completed project views located in the `solutio
 
 ### Links
 
-- Solution URL: [Frontend Mentor Solution]()
-- Live Site URL: [Add live site URL here](https://jusnow1608.github.io/news-homepage-javascript/)
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/responsive-news-homepage-using-mobile-first-workflow-and-css-grid-JTcCXGBX87)
+- Live Site URL: [Github Pages Live Preview](https://jusnow1608.github.io/news-homepage-javascript/)
 
 ## My process
 
@@ -100,10 +100,9 @@ body {
 ```
 ```js
 /* Proud of this reliable backdrop click listener for mobile navigation dismissal */
-document.body.addEventListener("click", (e) => {
+document.addEventListener("click", (e) => {
     if (menu.classList.contains("open") && !e.target.closest(".menu") && !e.target.closest(".menu-hamburger")) {
-        menu.classList.remove("open");
-        x_button.classList.remove("open");
+        toggleMenu(false);
     }
 });
 ```
