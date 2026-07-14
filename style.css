@@ -33,7 +33,7 @@
   width: 0.0625rem;
   height: 0.0625rem;
   padding: 0;
-  margin: -0.0625rem;
+  margin: clamp(-0.0625rem, -1vw, -0.0625rem);
   overflow: hidden;
   clip-path: inset(50%);
   white-space: nowrap;
@@ -55,6 +55,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.attribution a { 
+  color: var(--attribution-link);
 }
 
 img {
@@ -264,13 +268,9 @@ color: var(--soft-red);
 
 
 .attribution { 
-  font-size: 0.6875rem; 
+  font-size: clamp(0.625rem, 0.1vw + 0.65rem, 0.6875rem);
   text-align: center; 
   padding-block-end: clamp(0.2rem, 0.5vw, 0.3125rem);
-}
-
-.attribution a { 
-  color: var(--attribution-link);
 }
 
 
